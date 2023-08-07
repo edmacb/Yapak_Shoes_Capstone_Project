@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo1-2.png" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+      html {
+        background-color: #fbf8ee;
+      }
+      .dropdown {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+      }
+      .column {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 20px 30px 20px;
+        flex: 1 0 16.666%;
+      }
+      .f-column {
+        flex-wrap: wrap;
+        padding: 30px 20px 30px 20px;
+        flex: 1 0 16.666%;
+      }
+      .drop-title {
+        border-bottom: solid 1px black;
+        padding: 0px 0px 8px 5px;
+        letter-spacing: 2px;
+      }
+      .drop-list {
+        padding: 12px 8px 8px 8px;
+      }
+      .drop-list-text {
+        letter-spacing: 1.8px;
+      }
+      .drop-image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .drop-photo {
+        margin-bottom: 10px;
+        max-width: 200px;
+      }
+      .testi {
+        align-items: center;
+        justify-content: center;
+      }
+      .wid {
+        flex-direction: column;
+      }
+      .maza {
+        background: white;
+        background: white;
+        clear: both;
+        transition: all 1s linear;
+        animation: fadeIn 1s linear none;
+      }
+    </style>
   </head>
   <body>
-    <%- body %>
+    <%- include('../partials/header'); %> <%- body %>
+    <%-include('../partials/footer'); %>
   </body>
 </html>
