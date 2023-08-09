@@ -30,5 +30,13 @@ app.get("/cart", (req, res) => {
   res.render("pages/cart");
 });
 
+app.get('/products', (req, res) => {
+  const viewsData = {
+    items: items,
+    sizes: sizes,
+  }
+  res.render('pages/products', viewsData)
+})
+
 app.listen(5000);
 console.log("Server is running");
