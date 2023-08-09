@@ -29,7 +29,7 @@ app.get("/services", (req, res) => {
 app.get("/cart", (req, res) => {
   res.render("pages/cart");
 });
-
+// product page
 app.get('/products', (req, res) => {
   const viewsData = {
     items: items,
