@@ -17,7 +17,7 @@ npm install
 ```
 
 ```
-npm run start
+npm run dev
 ```
 
 ## Compile Tailwind CSS
