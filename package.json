@@ -2,10 +2,10 @@
   "name": "capstone-group4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index",
+    "dev": "nodemon app",
     "devcss": "postcss public/assets/styles/global.css -o public/assets/styles/style.css -w"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "connect-browser-sync": "^2.1.0",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
