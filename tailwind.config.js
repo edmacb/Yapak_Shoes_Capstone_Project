@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */ module.exports = {
   content: ["./views/**/*.ejs"],
   theme: {
-    extend: {},
+    extend: {
+      flex: {
+        "1-0-16": "1 0 16.666%",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
 };

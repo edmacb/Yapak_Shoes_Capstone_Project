@@ -1,10 +1,12 @@
-<header class="bg-white">
+<header x-data="{ mobileOpen : false}">
+  <!--Header-->
   <nav
     class="mx-auto flex max-w-7xl items-center justify-between p-8 lg:px-8"
     aria-label="Global"
   >
     <div class="flex flex-1">
       <div class="hidden lg:flex lg:gap-x-12">
+        <!--MENS-->
         <div x-data="{ open: false}">
           <div @mouseover="open = true" class="relative">
             <button
@@ -41,60 +43,65 @@
             class="flex absolute w-full -left-px top-28 z-10 mt-3 bg-white shadow-lg ring-gray-900/5 p-1"
           >
             <!--MENU-->
-            <div class="child f-column">
-              <h3 class="drop-title">All Men's</h3>
+            <div class="child py-8 px-5 flex-1-0-16">
+              <h3 class="border-b border-black pb-2 pl-1 tracking-widest">
+                All Men's
+              </h3>
               <ul>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Loafers and Drivers</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Loafers and Drivers</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Lace-ups</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Lace-ups</a>
                 </li>
-                <!-- <li class="drop-list">
-                  <a href="#" class="drop-list-text">Sneakers</a>
+                <!-- <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Sneakers</a>
                 </li> -->
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Mules and Sandals</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Boots and Chukkas</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Boots and Chukkas</a>
-                </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Made-to-Order</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Made-to-Order</a>
                 </li>
               </ul>
             </div>
             <!--BLUE-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-1.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-1.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
               </div>
             </div>
             <!--GREEN-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-2.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-2.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
               </div>
             </div>
             <!--YELLOW-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-3.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-3.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
@@ -102,7 +109,7 @@
             </div>
           </div>
         </div>
-
+        <!--WOMENS-->
         <div x-data="{isOpen: false }">
           <div @mouseover="isOpen = true" class="relative">
             <button
@@ -139,57 +146,65 @@
             class="flex absolute w-full -left-px top-28 z-10 mt-3 bg-white shadow-lg ring-gray-900/5 p-1"
           >
             <!--MENU-->
-            <div class="child f-column">
-              <h3 class="drop-title">All Women's</h3>
+            <div class="child py-8 px-5 flex-1-0-16">
+              <h3 class="border-b border-black pb-2 pl-1 tracking-widest">
+                All Women's
+              </h3>
               <ul>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Loafers and Drivers</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Loafers and Drivers</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Lace-ups</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Lace-ups</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Sneakers</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Sneakers</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Mules and Sandals</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Mules and Sandals</a>
                 </li>
-                <li class="drop-list">
-                  <a href="#" class="drop-list-text">Made-to-Order</a>
+                <li class="pt-3 pr-2 pb-2 pl-2">
+                  <a href="#" class="tracking-widest">Made-to-Order</a>
                 </li>
               </ul>
             </div>
             <!--BLUE-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-1.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-4.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
               </div>
             </div>
             <!--GREEN-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-2.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-1.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
               </div>
             </div>
             <!--YELLOW-->
-            <div class="column testi">
-              <div class="drop-image">
+            <div
+              class="flex flex-wrap py-8 px-5 flex-1-0-16 items-center justify-center"
+            >
+              <div class="flex justify-center text-center">
                 <a href="#">
                   <img
-                    class="drop-photo"
-                    src="./assets/images/headershoe-3.jpg"
+                    class="mb-2 max-w-[200px]"
+                    src="./assets/images/headershoe-3.webp"
                   />
                   <p>Sample Shoe Text</p>
                 </a>
@@ -197,11 +212,14 @@
             </div>
           </div>
         </div>
-
+        <!--KIDS-->
         <a href="#" class="text-sm font-semibold leading-6 text-black">KIDS</a>
       </div>
+      <!--MOBILE TOGGLE-->
       <div class="flex lg:hidden">
         <button
+          @click=" mobileOpen = true"
+          @keydown.escape=" mobileOpen = false"
           type="button"
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
         >
@@ -223,8 +241,9 @@
         </button>
       </div>
     </div>
+    <!--LOGO-->
     <a href="#" class="-m-1.5">
-      <img class="h-28 w-auto" src="./assets/images/logo.png" alt="" />
+      <img class="h-28 w-auto" src="./assets/images/logo.webp" alt="" />
     </a>
     <div class="flex flex-1 justify-end">
       <a href="#" class="group -m-2 flex items-center p-2">
@@ -250,65 +269,69 @@
       </a>
     </div>
   </nav>
-  <!-- Mobile menu, show/hide based on menu open state. -->
+  <!-- Mobile Navbar -->
   <div class="lg:hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10"></div>
-    <div
-      class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6"
-    >
-      <div class="flex items-center justify-between">
-        <div class="flex flex-1">
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
+    <!-- <div class="fixed inset-0 z-10"></div> -->
+    <div class="mobile-navbar">
+      <!-- navbar wrapper -->
+      <div
+        class="navbar-wrapper fixed top-0 left-0 h-full bg-white z-30 w-64 shadow-lg p-10"
+        x-show="mobileOpen"
+        @click.away=" mobileOpen = false"
+        x-transition:enter="transition duration-300 -ml-64"
+        x-transition:enter-start=""
+        x-transition:enter-end="transform translate-x-64"
+        x-transition:leave="transition duration-300"
+        x-transition:enter-start=""
+        x-transition:leave-end="transform -translate-x-64"
+      >
+        <div class="close">
+          <button
+            class="absolute top-0 right-0 mt-4 mr-4"
+            @click=" mobileOpen = false"
+          >
             <svg
-              class="h-6 w-6"
+              class="w-6 h-6"
               fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
               stroke="currentColor"
-              aria-hidden="true"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
         </div>
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img
-            class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
-          />
-        </a>
-        <div class="flex flex-1 justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-            >Log in <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
-      </div>
-      <div class="mt-6 space-y-2">
-        <a
-          href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-          >Product</a
-        >
-
-        <a
-          href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-          >Features</a
-        >
-
-        <a
-          href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-          >Company</a
-        >
+        <ul class="divide-y">
+          <li>
+            <a href="#" class="mt-10 mb-4 inline-block hover:text-yellow-500"
+              >Mens</a
+            >
+          </li>
+          <li>
+            <a href="#" class="my-4 inline-block hover:text-yellow-500"
+              >Womens</a
+            >
+          </li>
+          <li>
+            <a href="#" class="my-4 inline-block hover:text-yellow-500">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="my-4 inline-block hover:text-yellow-500">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="my-4 inline-block hover:text-yellow-500"
+              >Reviews</a
+            >
+          </li>
+          <li>
+            <a href="#" class="my-4 inline-block hover:text-yellow-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -13,59 +13,25 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     <!-- Include reCAPTCHA script -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <style>
-      html {
-        background-color: #fbf8ee;
-      }
-      .dropdown {
-        position: absolute;
+      .swiper {
         width: 100%;
-        z-index: 1000;
+        height: 200px;
       }
-      .column {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 30px 20px 30px 20px;
-        flex: 1 0 16.666%;
-      }
-      .f-column {
-        flex-wrap: wrap;
-        padding: 30px 20px 30px 20px;
-        flex: 1 0 16.666%;
-      }
-      .drop-title {
-        border-bottom: solid 1px black;
-        padding: 0px 0px 8px 5px;
-        letter-spacing: 2px;
-      }
-      .drop-list {
-        padding: 12px 8px 8px 8px;
-      }
-      .drop-list-text {
-        letter-spacing: 1.8px;
-      }
-      .drop-image {
-        display: flex;
-        justify-content: center;
+
+      .swiper-slide {
         text-align: center;
-      }
-      .drop-photo {
-        margin-bottom: 10px;
-        max-width: 200px;
-      }
-      .testi {
-        align-items: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
         justify-content: center;
-      }
-      .wid {
-        flex-direction: column;
-      }
-      .maza {
-        background: white;
-        background: white;
-        clear: both;
-        transition: all 1s linear;
-        animation: fadeIn 1s linear none;
+        align-items: center;
       }
     </style>
   </head>
