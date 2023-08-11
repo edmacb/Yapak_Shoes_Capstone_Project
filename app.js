@@ -64,7 +64,7 @@ app.get("/products", (req, res) => {
     items: items,
     sizes: sizes,
     categories: categories,
-    headerImage: "https://bristolshoes.ph/cdn/shop/files/4_740403fa-eb60-438d-ae16-24ca5c50991c_2000x.progressive.png.jpg?v=1614295683"
+    headerImage: ""
   };
   res.render("pages/products", viewsData);
 });
