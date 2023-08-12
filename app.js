@@ -40,6 +40,10 @@ app.get("/cart", (req, res) => {
   res.render("pages/cart");
 });
 
+app.get("/news", (req, res) => {
+  res.render("pages/news");
+});
+
 app.get("/faq", (req, res) => {
   const viewsData = {
     faq: faq,
