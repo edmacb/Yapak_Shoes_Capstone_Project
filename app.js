@@ -2,13 +2,14 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-
 const expressLayouts = require("express-ejs-layouts");
 const browserSync = require("browser-sync").create();
 const bsConfig = require("./bs-config.js");
 const { items } = require("./constants/items.js");
 const { sizes } = require("./constants/sizes.js");
 const { categories } = require("./constants/categories.js");
+
+const { faq } = require("./constants/faq.js");
 
 browserSync.init(bsConfig);
 app.use(require("connect-browser-sync")(browserSync));
@@ -38,20 +39,33 @@ app.get("/services", (req, res) => {
 app.get("/cart", (req, res) => {
   res.render("pages/cart");
 });
+
+app.get("/news", (req, res) => {
+  res.render("pages/news");
+});
+
+app.get("/faq", (req, res) => {
+  const viewsData = {
+    faq: faq,
+  };
+  res.render("pages/faq", viewsData);
+});
+
 // product page
 app.get("/products/men", (req, res) => {
   const viewsData = {
-    items: items.filter(item => item.gender === "male"),
+    items: items.filter((item) => item.gender === "male"),
     sizes: sizes,
     categories: categories,
-    headerImage: "https://bristolshoes.ph/cdn/shop/files/2_cefef713-13a0-4fb4-8c7d-4421a022fac1_2000x.progressive.png.jpg?v=1614295683"
+    headerImage:
+      "https://bristolshoes.ph/cdn/shop/files/2_cefef713-13a0-4fb4-8c7d-4421a022fac1_2000x.progressive.png.jpg?v=1614295683",
   };
   res.render("pages/products", viewsData);
 });
 
 app.get("/products/women", (req, res) => {
   const viewsData = {
-    items: items.filter(item => item.gender === "female"),
+    items: items.filter((item) => item.gender === "female"),
     sizes: sizes,
     categories: categories,
     headerImage: "https://bristolshoes.ph/cdn/shop/files/womensbanner_1900x.progressive.jpg?v=1613732177"
