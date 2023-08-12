@@ -1,11 +1,16 @@
-<div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+<div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-28">
+  <div class="px-14 mb-10 mx-auto lg:mx-0">
+    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      FAQS
+    </h2>
+  </div>
   <% if (faq.length) { %> <% for (let section of faq) { %>
-  <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+  <div class="my-12 mx-auto max-w-5xl">
+    <h2 class="text-2xl font-semibold leading-10 tracking-tight text-gray-900">
       <%= section.title %>
     </h2>
     <% if (section.faqs.length) {%> <% for (let faq of section.faqs) {%>
-    <dl class="mt-1 space-y-6 divide-y divide-gray-900/10">
+    <dl class="py-5 px-10 border-b">
       <div x-data="{ open: false }" class="pt-1">
         <dt>
           <!-- QUESTION -->
@@ -16,7 +21,7 @@
             aria-controls="faq-0"
             aria-expanded="false"
           >
-            <span class="text-base font-semibold leading-7">
+            <span class="text-base font-medium leading-7">
               <div><%= faq.question %></div>
             </span>
             <span class="ml-6 flex h-7 items-center">

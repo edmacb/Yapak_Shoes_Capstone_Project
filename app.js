@@ -21,32 +21,39 @@ app.set("view engine", "ejs");
 
 // PAGES
 app.get("/", (req, res) => {
-  res.render("pages/home");
+  res.render("pages/home", {
+    title: "Yapak Shoes | Handcrafted Filipino Shoes",
+  });
 });
 
 app.get("/about", (req, res) => {
-  res.render("pages/about");
-});
-
-app.get("/shop", (req, res) => {
-  res.render("pages/shop");
+  res.render("pages/about", {
+    title: "Our Story - Yapak Shoes",
+  });
 });
 
 app.get("/services", (req, res) => {
-  res.render("pages/services");
+  res.render("pages/services", {
+    title: "Yapak Shoes | Handcrafted Filipino Shoes",
+  });
 });
 
 app.get("/cart", (req, res) => {
-  res.render("pages/cart");
+  res.render("pages/cart", {
+    title: "Yapak Shoes | Handcrafted Filipino Shoes",
+  });
 });
 
 app.get("/news", (req, res) => {
-  res.render("pages/news");
+  res.render("pages/news", {
+    title: "Featured Press - Yapak Shoes",
+  });
 });
 
 app.get("/faq", (req, res) => {
   const viewsData = {
     faq: faq,
+    title: "Help & FAQs",
   };
   res.render("pages/faq", viewsData);
 });
@@ -54,6 +61,7 @@ app.get("/faq", (req, res) => {
 // product page
 app.get("/products/men", (req, res) => {
   const viewsData = {
+    title: "Mens - Yapak Shoes",
     items: items.filter((item) => item.gender === "male"),
     sizes: sizes,
     categories: categories,
@@ -65,20 +73,23 @@ app.get("/products/men", (req, res) => {
 
 app.get("/products/women", (req, res) => {
   const viewsData = {
+    title: "Womens - Yapak Shoes",
     items: items.filter((item) => item.gender === "female"),
     sizes: sizes,
     categories: categories,
-    headerImage: "https://bristolshoes.ph/cdn/shop/files/womensbanner_1900x.progressive.jpg?v=1613732177"
+    headerImage:
+      "https://bristolshoes.ph/cdn/shop/files/womensbanner_1900x.progressive.jpg?v=1613732177",
   };
   res.render("pages/products", viewsData);
 });
 
 app.get("/products", (req, res) => {
   const viewsData = {
+    title: "Yapak Shoes | Handcrafted Filipino Shoes",
     items: items,
     sizes: sizes,
     categories: categories,
-    headerImage: ""
+    headerImage: "",
   };
   res.render("pages/products", viewsData);
 });
