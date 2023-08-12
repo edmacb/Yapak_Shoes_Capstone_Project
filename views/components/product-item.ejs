@@ -1,4 +1,5 @@
 <div
+  id="<%= id %>"
   class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
 >
   <div
@@ -22,9 +23,25 @@
       <p class="text-sm italic text-gray-500"><%= colors %></p>
       <p class="text-base font-medium text-gray-900"><%= price %></p>
 
-      <button class="bg-slate-500 rounded-sm p-2 text-white group-hover:opacity-75 mt-2">
+      <button class="bg-slate-500 rounded-sm p-2 text-white  mt-2">
         <span>Add To Cart</span>
       </button>
     </div>
   </div>
 </div>
+
+<script>
+  ;(function () {
+    const ready = () => {
+      const el = document.getElementById('<%= id %>')
+      const imageElement = el.querySelector('img')
+      el.addEventListener('mouseenter', () => {
+        imageElement.src = '<%= imageRefSecondary %>'
+      })
+      el.addEventListener('mouseleave', () => {
+        imageElement.src = '<%= imageRef%>'
+      })
+    }
+    ready()
+  })()
+</script>
