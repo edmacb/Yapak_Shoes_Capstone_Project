@@ -21,6 +21,12 @@ body {
     height: auto;
   }
 }
+.customColor {
+  color: #354959;
+}
+.customBackground {
+  background-color: #354959;
+}
 .customButton {
   background-color: #354959;
 }
