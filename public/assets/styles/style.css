@@ -565,6 +565,9 @@ video {
 .-left-px{
   left: -1px;
 }
+.-top-32{
+  top: -8rem;
+}
 .bottom-0{
   bottom: 0px;
 }
@@ -612,6 +615,9 @@ video {
 }
 .col-span-4{
   grid-column: span 4 / span 4;
+}
+.col-span-full{
+  grid-column: 1 / -1;
 }
 .col-start-2{
   grid-column-start: 2;
@@ -678,6 +684,10 @@ video {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+.my-14{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
 .-ml-24{
   margin-left: -6rem;
 }
@@ -728,6 +738,9 @@ video {
 }
 .ml-2{
   margin-left: 0.5rem;
+}
+.ml-24{
+  margin-left: 6rem;
 }
 .ml-3{
   margin-left: 0.75rem;
@@ -795,6 +808,12 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
+.ml-10{
+  margin-left: 2.5rem;
+}
+.mb-14{
+  margin-bottom: 3.5rem;
+}
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -861,6 +880,9 @@ video {
 .h-6{
   height: 1.5rem;
 }
+.h-64{
+  height: 16rem;
+}
 .h-7{
   height: 1.75rem;
 }
@@ -881,6 +903,9 @@ video {
 }
 .h-full{
   height: 100%;
+}
+.h-5\/6{
+  height: 83.333333%;
 }
 .max-h-12{
   max-height: 3rem;
@@ -954,6 +979,10 @@ video {
 .min-w-0{
   min-width: 0px;
 }
+.min-w-max{
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -998,6 +1027,10 @@ video {
 }
 .origin-bottom-left{
   transform-origin: bottom left;
+}
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-translate-x-64{
   --tw-translate-x: -16rem;
@@ -1153,6 +1186,11 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -1541,6 +1579,9 @@ video {
 .pb-10{
   padding-bottom: 2.5rem;
 }
+.pb-16{
+  padding-bottom: 4rem;
+}
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1610,6 +1651,9 @@ video {
 .pt-40{
   padding-top: 10rem;
 }
+.pt-48{
+  padding-top: 12rem;
+}
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1621,6 +1665,9 @@ video {
 }
 .text-center{
   text-align: center;
+}
+.text-end{
+  text-align: end;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -1709,13 +1756,12 @@ video {
 .tracking-widest{
   letter-spacing: 0.1em;
 }
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 .text-gray-300{
   --tw-text-opacity: 1;
@@ -1801,6 +1847,9 @@ video {
 }
 .ring-inset{
   --tw-ring-inset: inset;
+}
+.ring-black\/5{
+  --tw-ring-color: rgb(0 0 0 / 0.05);
 }
 .ring-gray-300{
   --tw-ring-opacity: 1;
@@ -1897,6 +1946,12 @@ body {
   .gradient {
     height: auto;
   }
+}
+.customColor {
+  color: #354959;
+}
+.customBackground {
+  background-color: #354959;
 }
 .customButton {
   background-color: #354959;
@@ -2039,6 +2094,10 @@ body {
 }
 @media (min-width: 640px){
 
+  .sm\:top-6{
+    top: 1.5rem;
+  }
+
   .sm\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -2056,12 +2115,20 @@ body {
     margin-bottom: 4rem;
   }
 
+  .sm\:-mt-20{
+    margin-top: -5rem;
+  }
+
   .sm\:-mt-44{
     margin-top: -11rem;
   }
 
   .sm\:ml-0{
     margin-left: 0px;
+  }
+
+  .sm\:ml-3{
+    margin-left: 0.75rem;
   }
 
   .sm\:ml-4{
@@ -2144,6 +2211,11 @@ body {
     flex-shrink: 0;
   }
 
+  .sm\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2158,6 +2230,10 @@ body {
 
   .sm\:flex-row-reverse{
     flex-direction: row-reverse;
+  }
+
+  .sm\:flex-col{
+    flex-direction: column;
   }
 
   .sm\:items-center{
@@ -2211,6 +2287,12 @@ body {
     row-gap: 4rem;
   }
 
+  .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:space-x-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -2221,6 +2303,12 @@ body {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .sm\:px-12{
@@ -2258,12 +2346,20 @@ body {
     padding-bottom: 10rem;
   }
 
+  .sm\:pb-24{
+    padding-bottom: 6rem;
+  }
+
   .sm\:pl-20{
     padding-left: 5rem;
   }
 
   .sm\:pt-0{
     padding-top: 0px;
+  }
+
+  .sm\:pt-14{
+    padding-top: 3.5rem;
   }
 
   .sm\:pt-16{
@@ -2346,8 +2442,16 @@ body {
     display: grid;
   }
 
+  .md\:h-72{
+    height: 18rem;
+  }
+
   .md\:w-2\/5{
     width: 40%;
+  }
+
+  .md\:w-72{
+    width: 18rem;
   }
 
   .md\:grid-cols-2{
@@ -2383,6 +2487,11 @@ body {
 
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px){
@@ -2556,6 +2665,18 @@ body {
 
   .lg\:gap-y-8{
     row-gap: 2rem;
+  }
+
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
   .lg\:self-end{

@@ -57,6 +57,12 @@ app.get("/faq", (req, res) => {
   };
   res.render("pages/faq", viewsData);
 });
+// DEVELOPMENT PAGE - DELETE AFTER
+app.get("/dev", (req, res) => {
+  res.render("pages/dev", {
+    title: "Yapak Shoes | Handcrafted Filipino Shoes",
+  });
+});
 
 // product page
 app.get("/products/men", (req, res) => {
