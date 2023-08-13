@@ -15,7 +15,7 @@
 -->
 <div class="bg-white">
   <div>
-    <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
+    <!-- <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
       <div class="fixed inset-0 bg-black bg-opacity-25"></div>
 
       <div class="fixed inset-0 z-40 flex">
@@ -46,7 +46,6 @@
             </button>
           </div>
 
-          <!-- Filters -->
           <form class="mt-4">
             <div class="border-t border-gray-200 pb-4 pt-4">
               <fieldset>
@@ -174,7 +173,6 @@
             <div class="border-t border-gray-200 pb-4 pt-4">
               <fieldset>
                 <legend class="w-full px-2">
-                  <!-- Expand/collapse section button -->
                   <button
                     type="button"
                     class="flex w-full items-center justify-between p-2 text-gray-400 hover:text-gray-500"
@@ -185,11 +183,6 @@
                       >Category</span
                     >
                     <span class="ml-6 flex h-7 items-center">
-                      <!--
-                    Expand/collapse icon, toggle classes based on section open state.
-
-                    Open: "-rotate-180", Closed: "rotate-0"
-                  -->
                       <svg
                         class="rotate-0 h-5 w-5 transform"
                         viewBox="0 0 20 20"
@@ -289,7 +282,6 @@
             <div class="border-t border-gray-200 pb-4 pt-4">
               <fieldset>
                 <legend class="w-full px-2">
-                  <!-- Expand/collapse section button -->
                   <button
                     type="button"
                     class="flex w-full items-center justify-between p-2 text-gray-400 hover:text-gray-500"
@@ -298,11 +290,6 @@
                   >
                     <span class="text-sm font-medium text-gray-900">Sizes</span>
                     <span class="ml-6 flex h-7 items-center">
-                      <!--
-                    Expand/collapse icon, toggle classes based on section open state.
-
-                    Open: "-rotate-180", Closed: "rotate-0"
-                  -->
                       <svg
                         class="rotate-0 h-5 w-5 transform"
                         viewBox="0 0 20 20"
@@ -416,7 +403,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="border-b border-gray-200">
       <nav
@@ -454,7 +441,7 @@
 
     <main class="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
       <div class="border-b border-gray-200 pb-10 pt-24">
-        <img src="<%= headerImage %>"/>
+        <img src="<%= headerImage %>" />
       </div>
 
       <div class="pb-24 pt-12 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
@@ -478,16 +465,17 @@
 
           <div class="hidden lg:block">
             <form class="space-y-10 divide-y divide-gray-200">
-
               <div class="pt-10">
                 <fieldset>
                   <legend class="block text-sm font-medium text-gray-900">
                     Category
                   </legend>
                   <div class="space-y-3 pt-6">
-                    <% if (categories.length) {%> <% for (category of categories) { %> <%-
-                      include('../../components/checkbox.ejs', {label: category.label,
-                      id: category.id, value: category.value}) %> <% } %> <% } %>
+                    <% if (categories.length) {%> <% for (category of
+                    categories) { %> <%-
+                    include('../../components/checkbox.ejs', {label:
+                    category.label, id: category.id, value: category.value}) %>
+                    <% } %> <% } %>
                   </div>
                 </fieldset>
               </div>
