@@ -604,6 +604,9 @@ video {
 .z-40{
   z-index: 40;
 }
+.z-50{
+  z-index: 50;
+}
 .order-first{
   order: -9999;
 }
@@ -846,6 +849,9 @@ video {
 }
 .aspect-\[4\/3\]{
   aspect-ratio: 4/3;
+}
+.aspect-\[5\/2\]{
+  aspect-ratio: 5/2;
 }
 .aspect-\[7\/5\]{
   aspect-ratio: 7/5;
@@ -1322,9 +1328,16 @@ video {
 .border-transparent{
   border-color: transparent;
 }
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-black\/40{
+  background-color: rgb(0 0 0 / 0.4);
 }
 .bg-black\/80{
   background-color: rgb(0 0 0 / 0.8);
@@ -2725,6 +2738,11 @@ body {
 
   .xl\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:-mt-8{
