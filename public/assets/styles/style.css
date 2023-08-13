@@ -668,7 +668,11 @@ video {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.my-3{
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+.my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
@@ -814,6 +818,9 @@ video {
 .mb-14{
   margin-bottom: 3.5rem;
 }
+.mt-40 {
+  margin-top: 10rem;
+}
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -859,7 +866,7 @@ video {
 .h-10{
   height: 2.5rem;
 }
-.h-11{
+.h-11 {
   height: 2.75rem;
 }
 .h-2{
@@ -906,6 +913,19 @@ video {
 }
 .h-5\/6{
   height: 83.333333%;
+}
+.h-\[263px\] {
+  height: 263px;
+}
+.h-\[264px\] {
+  height: 264px;
+}
+.h-\[550px\] {
+  height: 550px;
+}
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .max-h-12{
   max-height: 3rem;
@@ -1831,6 +1851,11 @@ video {
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-indigo-600\/10{
   --tw-shadow-color: rgb(79 70 229 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
@@ -2122,7 +2147,6 @@ body {
   .sm\:-mt-44{
     margin-top: -11rem;
   }
-
   .sm\:ml-0{
     margin-left: 0px;
   }
